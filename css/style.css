@@ -1,0 +1,94 @@
+/* Styles go here */
+
+
+body {
+  background-color: azure;
+  padding: 10%;
+}
+h1 {
+  text-align: justify;
+
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #0099FF;
+  border-radius: 50%;
+}
+
+#myCircle {
+  animation:slide 4s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0px,0px,0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(300px,0px,0px);
+    animation-timing-funciton: ease-out;
+    background-color: #009980;
+    opacity: 0.5;
+    
+  }
+  100% {
+    transform: translate3d(0px,0px,0px);
+    
+  }
+}
+
+/*Loader styles*/
+
+.loader {
+  width: 50px;
+  height: 50px;
+  background-color: #FF4590;
+  border: 5px dotted orange;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 1;
+  margin-top: -2em;
+}
+
+#loader {
+  -webkit-animation: rotating 5s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg); }
+}
+
+/* box styles */
+
+.box {
+  width: 10.5em;
+  height: 7em;
+ background-color: orange;
+ z-index : 4;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: purple;
+ font-family: Verdana;
+ }
+.first {
+  margin-right: 3em;
+}
+
+/* bunny Styles */
+.bunny {
+  width: 30em;
+  margin: 4em 0 2em;
+}
+
+#bunny {
+  animation: turn 10s linear infinite;
+}
+
+@keyframes turn {
+  from { transform: rotate(0deg);}
+  to { transform: rotateY(180deg); }
+}
